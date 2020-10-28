@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Image, Button, FlatList } from "react-native";
 
 const ImageDetail = () => {
   const [colors, setColors] = useState([]);
+  console.log(colors);
   return (
     <View>
       <Button
