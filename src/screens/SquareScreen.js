@@ -10,7 +10,9 @@ const reducer = (state, action) => {
  //action === {colorToChange: "red" || "green" || "blue", amount: 15 || -15}
  switch(action.colorToChange){
    case 'red':
-     return{...state, red: state.red + action.amount};
+    return state.red + action.amount > 255 || state.red + action.amount < 0
+      ? state
+      : {...state, red: state.red + action.amount};
   case 'green':
      return{...state, green: state.green + action.amount};  
   case 'blue':
