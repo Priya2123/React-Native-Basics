@@ -2,7 +2,7 @@ import React, { useState, useReducer } from "react";
 import { View, Text, StyleSheet, Image, Button } from "react-native";
 
 
-const reducer = (state, action){
+const reducer = (state, action) => {
   //state === {count:number}
   //action === {type:'increment'||'decrement', payload: 1 }
 
