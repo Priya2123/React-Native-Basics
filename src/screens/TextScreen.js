@@ -14,6 +14,7 @@ const TextScreen = () => {
         onChangeText={(newText) => setName(newText)}
         />
         <Text>My name is: {name}</Text>
+        {name.length < 4 ? <Text>Name must be atleast 4 characters</Text> : null}
     </View>
 }
 
