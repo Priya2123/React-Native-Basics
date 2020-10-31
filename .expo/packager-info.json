@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 3660,
+  "packagerPid": 2180,
   "expoServerNgrokUrl": "https://hk-hab.anonymous.rn-starter.exp.direct",
   "packagerNgrokUrl": "https://packager.hk-hab.anonymous.rn-starter.exp.direct",
-  "ngrokPid": 6396,
+  "ngrokPid": 7232,
   "webpackServerPort": null
 }

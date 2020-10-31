@@ -2,16 +2,21 @@ import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
 const BoxScreen = () => {
+    return(
     <View style={styles.viewStyle}>
         <Text style={styles.textOneStyle}>box Screen 1</Text>
         <Text style={styles.textSecondStyle}>box Screen 2</Text>
         <Text style={styles.textThirdStyle}>box Screen 3</Text>
     </View>
+    )
 }
 
 //content --> padding --> border --> margin  : BOX MODEL
 //flexDirection, alignItems, justifyContent : parent
 //flex, alignSelf : child
+//position : absolute, relative
+//top, bottom, left, right: number
+//absolute fill objects: top:0, left: 0, bottom: 0, right: 0 || ...StyleSheet.absoluteFillObject
 const styles = StyleSheet.create({
     viewStyle: {
         borderWidth: 3,
@@ -29,7 +34,8 @@ const styles = StyleSheet.create({
     textSecondStyle: {
         borderWidth: 3,
         borderColor: 'red',
-        flex: 1
+        flex: 1,
+        alignSelf: 'center'
     },
     textThirdStyle: {
         borderWidth: 3,

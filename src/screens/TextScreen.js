@@ -3,7 +3,7 @@ import {StyleSheet, View, Text, TextInput} from 'react-native';
 
 const TextScreen = () => {
     const [name, setName] = useState('');
-
+  return(
     <View>
     <Text>Enter Name:</Text>
         <TextInput 
@@ -16,6 +16,7 @@ const TextScreen = () => {
         <Text>My name is: {name}</Text>
         {name.length < 4 ? <Text>Name must be atleast 4 characters</Text> : null}
     </View>
+    )
 }
 
 const styles = StyleSheet.create({
